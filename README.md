@@ -25,7 +25,7 @@ For this project, we simulate 10,000,000 paths to calculate the option price. Ca
 - Using OpenMP achieves a 3.5x speedup.
 - Combining Intel MKL with OpenMP yields an impressive 41x speedup. The largest gain comes from the optimized random number generation methods in the MKL library, which are crucial for Monte Carlo simulation performance.
 
-  ##Reference
-  - https://www.quantstart.com/articles/European-vanilla-option-pricing-with-C-via-Monte-Carlo-methods/
-  - https://www.intel.com/content/www/us/en/docs/onemkl/cookbook/2023-1/monte-carlo-simulating-european-options-pricing.html
+##Reference
+- https://www.quantstart.com/articles/European-vanilla-option-pricing-with-C-via-Monte-Carlo-methods/
+- https://www.intel.com/content/www/us/en/docs/onemkl/cookbook/2023-1/monte-carlo-simulating-european-options-pricing.html
 
