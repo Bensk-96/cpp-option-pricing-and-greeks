@@ -1,4 +1,4 @@
-# cpp-option-pricing-and-greeks
+# Monte Carlo Simulation for Option Pricing and Greeks Calculation
 
 The goal of this project is to price Vanilla European options and calculate the underlying greeks(Delta and Gamma) using **Monte Carlo simulatin** combined with **finite difference method**.
 Monte Carlo simulation is idea for parallelizationb since it involves generating numerous indepdent paths. This project accelerates the computations using both **OpenMP** (for parallel processing) and **Intel MKl** (a highly optimized math library that utilizes SIMD instructions for accelerated performance).
@@ -24,4 +24,8 @@ For this project, we simulate 10,000,000 paths to calculate the option price. Ca
 - The baseline computation takes 1.2 seconds, which is significantly fast, especcially compared to high-level programming languages like Python.
 - Using OpenMP achieves a 3.5x speedup.
 - Combining Intel MKL with OpenMP yields an impressive 41x speedup. The largest gain comes from the optimized random number generation methods in the MKL library, which are crucial for Monte Carlo simulation performance.
+
+  ##Reference
+  - https://www.quantstart.com/articles/European-vanilla-option-pricing-with-C-via-Monte-Carlo-methods/
+  - https://www.intel.com/content/www/us/en/docs/onemkl/cookbook/2023-1/monte-carlo-simulating-european-options-pricing.html
 
