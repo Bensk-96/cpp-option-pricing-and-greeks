@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cpp-option-pricing-and-greeks", "cpp-option-pricing-and-greeks\cpp-option-pricing-and-greeks.vcxproj", "{14A7C613-FB0D-4D05-BC4B-E81A341F232D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14A7C613-FB0D-4D05-BC4B-E81A341F232D}.Debug|x64.ActiveCfg = Debug|x64
+		{14A7C613-FB0D-4D05-BC4B-E81A341F232D}.Debug|x64.Build.0 = Debug|x64
+		{14A7C613-FB0D-4D05-BC4B-E81A341F232D}.Debug|x86.ActiveCfg = Debug|Win32
+		{14A7C613-FB0D-4D05-BC4B-E81A341F232D}.Debug|x86.Build.0 = Debug|Win32
+		{14A7C613-FB0D-4D05-BC4B-E81A341F232D}.Release|x64.ActiveCfg = Release|x64
+		{14A7C613-FB0D-4D05-BC4B-E81A341F232D}.Release|x64.Build.0 = Release|x64
+		{14A7C613-FB0D-4D05-BC4B-E81A341F232D}.Release|x86.ActiveCfg = Release|Win32
+		{14A7C613-FB0D-4D05-BC4B-E81A341F232D}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {727BDEBD-C87D-4C65-B2B3-8E791A90F9C8}
+	EndGlobalSection
+EndGlobal

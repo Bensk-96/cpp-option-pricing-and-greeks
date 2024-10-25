@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE IntelParallelAdvisorSummaryCollection SYSTEM  "IntelParallelAdvisorSummaryCollection.dtd"> -->
+
+<IntelParallelAdvisorSummary version="" 
+                             kind="DATAKIND_SURVEY_EX" >
+  <hotspot filename=""
+           line_no="-1"
+           routine="func@0x1801def1f"
+           is_vectorized="1"
+           self_time="1.593972E-02"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="106"
+           priority="0">
+           <recommendation id="rec_registers_pressure_split_loop_c" title="Split loop into smaller loops" confidence="3" gain="-1"/>
+  </hotspot>
+  <hotspot filename=""
+           line_no="-1"
+           routine="func@0x1801b50b0"
+           is_vectorized="1"
+           self_time="1.476129E-02"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="109"
+           priority="0">
+           <recommendation id="rec_registers_pressure_split_loop_c" title="Split loop into smaller loops" confidence="3" gain="-1"/>
+  </hotspot>
+  <hotspot filename=""
+           line_no="-1"
+           routine="func@0x18020215f"
+           is_vectorized="1"
+           self_time="5.528459E-03"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="111"
+           priority="0">
+           <recommendation id="rec_registers_pressure_split_loop_c" title="Split loop into smaller loops" confidence="3" gain="-1"/>
+  </hotspot>
+  <hotspot filename="C:\Users\Benjamin_Chan\source\repos\cpp-option-pricing-and-greeks\cpp-option-pricing-and-greeks\openmp.h"
+           line_no="16"
+           routine="option_price_omp"
+           is_vectorized="0"
+           self_time="2.973408E-01"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="62"
+           priority="0">
+           <recommendation id="rec_sqrt_c" title="Enable the use of approximate sqrt instructions" confidence="1" gain="-1"/>
+  </hotspot>
+  <hotspot filename="C:\Users\Benjamin_Chan\source\repos\cpp-option-pricing-and-greeks\cpp-option-pricing-and-greeks\openmp.h"
+           line_no="16"
+           routine="option_price_omp"
+           is_vectorized="0"
+           self_time="2.973408E-01"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="62"
+           priority="0">
+           <recommendation id="rec_type_conversions_smallest_c" title="Use the smallest data type" confidence="1" gain="-1"/>
+  </hotspot>
+</IntelParallelAdvisorSummary >

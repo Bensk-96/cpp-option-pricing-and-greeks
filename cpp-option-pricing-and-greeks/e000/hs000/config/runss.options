@@ -1,0 +1,84 @@
+-r
+C:\Users\Benjamin_Chan\source\repos\cpp-option-pricing-and-greeks\cpp-option-pricing-and-greeks\e000\hs000
+--mrte-mode=auto
+--return-app-exitcode
+--follow-child
+--strategy=ld-linux.so.2:notrace:notrace,ld-linux-x86-64.so.2:notrace:notrace
+--interval=10
+--itt-config=frame,task,event,counter,model
+--type=cpu:stack
+--stack-stitching
+--stackwalk=offline
+--stack-unwind-limit=8388608
+--data-limit-mb=500
+--mrte-type=java,dotnet,python
+--opencl-trace-mode=default
+--search-dir
+sym=C:\\Users\\Benjamin_Chan\\source\\repos\\cpp-option-pricing-and-greeks\\x64\\Release
+--search-dir
+sym:r=C:\\Users\\Benjamin_Chan\\source\\repos\\cpp-option-pricing-and-greeks
+--search-dir
+bin=C:\\Users\\Benjamin_Chan\\source\\repos\\cpp-option-pricing-and-greeks\\x64\\Release
+--search-dir
+bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2024.2\\bin
+--search-dir
+bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64
+--search-dir
+bin=C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.22621.0\\x64
+--search-dir
+bin=C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.22621.0\\x86
+--search-dir
+bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\tools
+--search-dir
+bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\ide
+--search-dir
+bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64
+--search-dir
+bin=C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319
+--search-dir
+bin=C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319
+--search-dir
+bin=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin
+--search-dir
+bin=C:\\Program Files\\Microsoft MPI\\Bin
+--search-dir
+bin=C:\\Program Files (x86)\\VMware\\VMware Player\\bin
+--search-dir
+bin=C:\\Windows\\system32
+--search-dir
+bin=C:\\Windows
+--search-dir
+bin=C:\\Windows\\System32\\Wbem
+--search-dir
+bin=C:\\Windows\\System32\\WindowsPowerShell\\v1.0
+--search-dir
+bin=C:\\Windows\\System32\\OpenSSH
+--search-dir
+bin=C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common
+--search-dir
+bin=C:\\Program Files\\Git\\cmd
+--search-dir
+bin=C:\\Program Files\\Docker\\Docker\\resources\\bin
+--search-dir
+bin=C:\\ProgramData\\chocolatey\\bin
+--search-dir
+bin=C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR
+--search-dir
+bin=C:\\Users\\Benjamin_Chan\\AppData\\Local\\NVIDIA\\ChatWithRTX\\env_nvd_rag\\Lib\\site-packages\\torch\\lib
+--search-dir
+bin=C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit
+--search-dir
+bin=C:\\Program Files\\CMake\\bin
+--search-dir
+bin=C:\\Users\\Benjamin_Chan\\AppData\\Local\\Microsoft\\WindowsApps
+--search-dir
+bin=C:\\Users\\Benjamin_Chan\\AppData\\Local\\Programs\\Microsoft VS Code\\bin
+--search-dir
+bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\bin
+--search-dir
+bin=C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\latest\\lib
+--search-dir
+bin=C:\\Users\\Benjamin_Chan\\source\\repos\\cpp-option-pricing-and-greeks
+--app-working-dir=C:\\Users\\Benjamin_Chan\\source\\repos\\cpp-option-pricing-and-greeks\\cpp-option-pricing-and-greeks\
+--
+C:\\Users\\Benjamin_Chan\\source\\repos\\cpp-option-pricing-and-greeks\\x64\\Release\\cpp-option-pricing-and-greeks.exe
