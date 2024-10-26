@@ -31,39 +31,39 @@ int main(int argc, char** argv) {
 	printf("----------------------------------------------------------------- \n");
 
 	std::cout << "Running baseline monte carlo..." << std::endl;
-	std::chrono::high_resolution_clock::time_point start_bl = std::chrono::high_resolution_clock::now();
+	auto start_bl = std::chrono::high_resolution_clock::now();
 
-	std::pair<double, double> price_bl = option_price_baseline(num_sims, S, K, r, v, T);
-	std::pair<double, double> delta_bl = delta_baseline(num_sims, S, K, r, v, T, delta_S);
-	std::pair<double, double> gamma_bl = gamma_baseline(num_sims, S, K, r, v, T, delta_S);
+	auto price_bl = option_price_baseline(num_sims, S, K, r, v, T);
+	auto delta_bl = delta_baseline(num_sims, S, K, r, v, T, delta_S);
+	auto gamma_bl = gamma_baseline(num_sims, S, K, r, v, T, delta_S);
 
-	std::chrono::high_resolution_clock::time_point end_bl = std::chrono::high_resolution_clock::now();
-	std::chrono::duration<double> time_span_bl = std::chrono::duration_cast<std::chrono::duration<double>>(end_bl - start_bl);
+	auto end_bl = std::chrono::high_resolution_clock::now();
+	auto time_span_bl = std::chrono::duration_cast<std::chrono::duration<double>>(end_bl - start_bl);
 	std::cout << "runtime is " << time_span_bl.count() << " seconds. \n";
 	printf("----------------------------------------------------------------- \n");
 
 	std::cout << "Running OpenMP Monte Carlo..." << std::endl;
-	std::chrono::high_resolution_clock::time_point start_omp = std::chrono::high_resolution_clock::now();
+	auto start_omp = std::chrono::high_resolution_clock::now();
 
-	std::pair<double, double> price_openmp = option_price_omp(num_sims, S, K, r, v, T);
-	std::pair<double, double> delta_openmp = delta_omp(num_sims, S, K, r, v, T, delta_S);
-	std::pair<double, double> gamma_openmp = gamma_omp(num_sims, S, K, r, v, T, delta_S);
+	auto price_openmp = option_price_omp(num_sims, S, K, r, v, T);
+	auto delta_openmp = delta_omp(num_sims, S, K, r, v, T, delta_S);
+	auto gamma_openmp = gamma_omp(num_sims, S, K, r, v, T, delta_S);
 
-	std::chrono::high_resolution_clock::time_point end_omp = std::chrono::high_resolution_clock::now();
-	std::chrono::duration<double> time_span_omp = std::chrono::duration_cast<std::chrono::duration<double>>(end_omp - start_omp);
+	auto end_omp = std::chrono::high_resolution_clock::now();
+	auto time_span_omp = std::chrono::duration_cast<std::chrono::duration<double>>(end_omp - start_omp);
 	std::cout << "Runtime is " << time_span_omp.count() << " seconds. \n";
 	std::cout << "Speedup is " <<  time_span_bl.count() / time_span_omp.count() << " times. \n";
 	printf("----------------------------------------------------------------- \n");
 
 	std::cout << "Running Intel MKL + OpenMP Monte Carlo..." << std::endl;
-	std::chrono::high_resolution_clock::time_point start_mkl = std::chrono::high_resolution_clock::now();
+	auto start_mkl = std::chrono::high_resolution_clock::now();
 
-	std::pair<double, double> price_intel_mkl = option_price_mkl(num_sims, S, K, r, v, T);
-	std::pair<double, double> delta_intel_mkl = delta_mkl(num_sims, S, K, r, v, T, delta_S);
-	std::pair<double, double> gamma_intel_mkl = gamma_mkl(num_sims, S, K, r, v, T, delta_S);
+	auto price_intel_mkl = option_price_mkl(num_sims, S, K, r, v, T);
+	auto delta_intel_mkl = delta_mkl(num_sims, S, K, r, v, T, delta_S);
+	auto gamma_intel_mkl = gamma_mkl(num_sims, S, K, r, v, T, delta_S);
 
-	std::chrono::high_resolution_clock::time_point end_mkl = std::chrono::high_resolution_clock::now();
-	std::chrono::duration<double> time_span_mkl = std::chrono::duration_cast<std::chrono::duration<double>>(end_mkl - start_mkl);
+	auto end_mkl = std::chrono::high_resolution_clock::now();
+	auto time_span_mkl = std::chrono::duration_cast<std::chrono::duration<double>>(end_mkl - start_mkl);
 	std::cout << "Runtime is " << time_span_mkl.count() << " seconds. \n";
 	std::cout << "Speedup is " <<  time_span_bl.count() / time_span_mkl.count()  << " times. \n";
 	printf("----------------------------------------------------------------- \n");
